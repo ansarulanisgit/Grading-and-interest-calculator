@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading and Interest Calculator | Ansarul Anis</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-12"></div>
+            <div class="col-md-6 col-12 my-3">
+                <!-- Grading area -->
+                <div class="grading-area text-center">
+                    <h2 class="text-primary my-3">Grading App</h2>
+                    <input id="grade-input" type="text" placeholder="Input your number" class="mt-2">
+                    <button id="grade-submit" onclick="showGrade()" class="btn-primary mt-2">Check Now</button>
+                    <div id="grade-message" class="my-3">
+                        <p>Input number you got to show grading.</p>
+                    </div>
+                </div>
+
+                <!-- Interest area -->
+                <div class="interest-area text-center mt-4">
+                    <h2 class="text-primary my-3">Interest Calculator</h2>
+                    <input id="capital-input" type="text" placeholder="Input capital" class="mb-2"> <br>
+                    <input id="interest-input" type="text" placeholder="Interest percentage" class="mb-2"> <br>
+                    <input id="year-input" type="text" placeholder="Time in year" class="mb-2"> <br>
+                    <button id="interest-submit" onclick="calculateInterest()" class="btn-primary">Calculate Interest</button>
+                    <div id="interest-message" class="my-3">
+                        <p>Input capital, interset rate and time in year <br> to calculate interest.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="col-md-3 col-12"></div>
+        </div>
+    </div>    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
