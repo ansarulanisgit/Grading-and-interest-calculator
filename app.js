@@ -78,7 +78,7 @@ const calculateInterest = () => {
         return;
     }
     else{
-        // I = PNR (I = Interest, P = Principle/Capital, N = Time, R = Interest rate)
+        // I = PNR (I = Interest Rate, P = Principle/Capital, N = Time, R = Interest rate)
         const interest = (capital*year*interestRate)/100;
         message.innerHTML = `<p class ="text-primary"> Interest is <span class="text-danger fs-5 fw-bold">${interest}</span> taka.</p>`;
     }
